@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/list.css"> 
+    <title>list</title>
+  </head>
+  <body>
+    <div class="hp-bg-grid">
+      <div class="hp-bg-top"></div>
+      <div class="hp-bg-mid"></div>
+      <div class="hp-bg-bottom"></div>
+    </div>
+    <nav>
+    <div class="nav-top sticky-top">
+      <div class="nav-top-bg"></div>
+
+      <div class="inv-title-container">
+          <h3>
+              <div class="inv-chest-icon"></div>
+              寵物日記
+          </h3>
+      </div>
+
+    </div>
+    </nav>
+    <div class="container overflow-auto"><!-- container-fluid -->
+      <div class="row">
+        <div class="col-md-12">
+          <table class="table">
+            <thead>
+              <tr>
+                  <th class="w1" scope="col">序號</th>
+                  <th class="w2" scope="col">寵物名稱</th>
+                  <th class="w3" scope="col">打招呼</th>
+                  <th class="w4" scope="col">選擇食物</th>
+                  <th class="w5" scope="col">回復藥水</th>
+                  <th class="w6" scope="col">贈送禮物</th>
+                  <th class="w7" scope="col">禮物訊息</th>
+              </tr>
+            </thead>
+          <tbody>
+            
+          </tbody>
+          </table> 
+        </div> 
+      </div>   
+     
+    </div>
+
+          <tbody>  <!-- 讀資料內容的標籤 -->  </tbody>
+    <footer>
+      <div class="footer">
+      <div class="footer-pattern">
+      <a href="http://www.neopets.com/index.phtml">參考資料</a>
+          
+      
+         <div class="ENDBTN"> 
+              <a id="start-test" class="btn btn-outline-dark" type="button" name="button" href="index.html">再玩一次</a>
+          </div>
+      </div>
+     
+</div>
+    </footer>
+        
+  
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+   <script src="js/list.js"></script>
+  </body>
+<template id="tr01" style="display: none;">
+    <tr>
+        <th scope="row">LIST_HERE</th>
+        <td>petName</td>
+        <td>pet_message</td>
+        <td>pet_food</td>
+        <td>pet_potion</td>
+        <td>pet_gift</td>
+        <td>gift_message</td>
+    </tr>
+
+</template>
+
+</html>

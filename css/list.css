@@ -1,0 +1,114 @@
+html, body {
+    /* 設定body高度為100% 拉到視窗可視的大小 */
+
+}
+.nav-top{
+	background: #fed123;
+    border-bottom: 3px solid #faa819;
+/*    position: fixed;*/
+    top: 0;
+    width: 100%;
+    height: 80px;
+    /* height: 100px; */
+    /* overflow: hidden; */
+    z-index: 98;
+}
+.nav-top-bg{
+	background: url(../images/pattern-basic.svg) center -10px;
+    background-size: 121px 58px;
+    top: -10px;
+    height: calc(100% + 10px)!important;
+    position: absolute;
+    width: 100%;
+}
+.inv-title-container{
+	border-image-slice: 34 32 37 28;
+    border-image-width: 34px 32px 37px 28px;
+    border-image-outset: 4px 12px 4px 14px;
+    border-image-repeat: stretch stretch;
+    border-image-source: url(../images/inventory-backing.svg);
+    border-style: solid;
+    position: relative;
+    box-sizing: border-box;
+    width: auto !important;
+    max-width: 250px;
+    color: #fff;
+    padding-left: 60px;
+	margin-top: 0 !important;
+    margin: 20px auto;
+
+}
+.container{
+	height: 500px;
+	background-color: #f4f4f4;	
+	margin-top: 50px;
+	flex-grow: 1;
+	overflow:auto;
+}
+.hp-bg-grid {
+
+    position: absolute;
+    width: 100%;
+    height: 93%;
+    left: 0;
+
+}
+.hp-bg-top{
+    height: 40%;
+    background-image: url(../images/hp-bg-top.png);
+    background-size: auto 100%;
+    background-repeat-y: no-repeat;
+    background-repeat-x: repeat;
+    margin: 0;
+  /*  z-index: 2;*/
+}
+
+.hp-bg-mid{
+    height: 100%;
+    background-image: url(../images/hp-bg-mid.png);
+    background-size: 1200px 800px;
+    margin-top: -500px;
+ /*   z-index: 3;*/
+}
+.hp-bg-bottom{
+    height:35%;
+    background-image: url(../images/hp-bg-bottom.png);
+    background-size: 600px 600px;
+    background-position: center 10px;
+    z-index: 4;
+}
+.col-md-12{
+	background-image: url(../images/499662.png);
+	background-size: cover;
+    background-repeat-y: no-repeat;
+    background-repeat-x: repeat;
+    z-index: 1;
+
+
+}
+.thead{
+	background-color: #fff;
+}
+.ENDBTN{
+	margin-left: 20px;
+
+}
+footer{
+	background: #fed123;
+    border-top: 3px solid #faa819;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+	bottom: 0;
+    box-sizing: border-box;
+
+}
+.footer-pattern{
+    height: 150%;
+	display: flex;
+	justify-content: center;
+    background-size: 121px 58px;
+    width: 100%;
+}

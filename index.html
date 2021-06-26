@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>CREATE A PET</title>
+  </head>
+  <body>
+    <div class="cover">
+        <div class="spinner-border text-warning" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>        
+    </div>
+    <div class="progress fixed-top h5 z1">
+        <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>        
+    <div class="container">
+       <header>
+
+       </header>
+        <nav>
+           <div class="btn btn-warning btn-prev">上一頁</div>
+           <div class="btn btn-warning btn-send">結束一天</div>
+           <div class="btn btn-warning btn-next" >下一頁</div>
+        </nav>
+        <section>
+        <article id="article1" class="article1">
+            <h1>CREATE A PET</h1>
+            <p>今天是期待已久的生日，每個孩子都會在生日時獲得一個陪伴寵物，與你一起長大與冒險。快去看看自己的新朋友吧!</p> 
+            <div class="bori1">
+            <img src="images/bori.png" alt=""></div>
+
+            <div class="chosenPet__form" id="pet_form">
+              <div class="species" id="species">
+              <b>種族:</b> <span id="pet_title">波利</span>
+              <b>毛色:</b> <span id="pet_title">黃色</span>
+              </div>
+          </div>
+            
+        </article>
+        <article id="article2" class="article2">
+          <div class="bori2">
+            <img src="images/bori.png" alt="">
+            <div class="Pet__form" id="pet_form">
+              <div class="species" id="species">
+              <b>種族:</b> <span id="pet_title">波利</span>
+              <b>毛色:</b> <span id="pet_title">黃色</span>
+              </div>
+            </div>
+          </div> 
+            <div class="form__container input-group mb-1 main-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">寵物名子</span>
+                </div>
+                <input type="text" class="form-control"  id="petName" name="petName" placeholder="必填">
+            </div>
+
+            <div class="main-group">
+                <div class="form__container input-group mb-1 ">
+                    <div class="input-group-prepend">
+                      <span class="form-text" id="basic-addon1">未來成長目標</span>
+                    </div>
+                    <div class="input-group-append flex-wrap flex-fill p-1  rounded-lg schoolTypeRight">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                   <input type="radio" id="future1" name="future" value="力量">
+                                </div>
+                            </div>
+                            <div class="form-box flex-fill d-block">
+                                <label class="d-block" for="future1">力量</label>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                   <input type="radio" id="future2" name="future" value="魔力">
+                                </div>
+                            </div>
+                            <div class="form-box flex-fill d-block">
+                                <label class="d-block" for="future2">魔力</label>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                   <input type="radio" id="future3" name="future" value="防禦">
+                                </div>
+                            </div>
+                            <div class="form-box flex-fill d-block">
+                                <label class="d-block" for="future">防禦</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form__container input-group main-group">  <!-- 改了input-group -->
+                    <label class="form-text" for="location">你的寵物喜歡去哪裡玩呢?</labe>
+                <select class="custom-select" id="location" name="location">
+                  <option value="森林">森林</option>
+                  <option value="海洋">海洋</option>
+                  <option value="小鎮">小鎮</option>
+                  <option value="都市">都市</option>
+                  <option value="高山">高山</option>
+                  <option value="冰原">冰原</option>
+                </select>
+            </div>
+
+            <div class="form__container main-group">
+              <label class="form-text" for="interest">你的寵物有甚麼興趣呢?</labe>
+                <select class="custom-select" id="interest" name="interest">               
+                  <option value="採水果">採水果</option>
+                  <option value="收集閃亮亮的東西">收集閃亮亮的東西</option>
+                  <option value="交很多朋友">交很多朋友</option>
+                  <option value="讀書">讀書</option>
+                  <option value="學很多戰鬥能力">學習很多戰鬥能力</option>
+                  <option value="吃好吃的食物">吃好吃的食物</option>
+                </select>
+            </div>
+
+            <div class="form__container mb-1 main-group">
+
+                    <span class="form-text">想跟他說的第一句話</span>
+
+                <input type="text" class="form-control"  id="message" name="message" placeholder="試著歡迎新的朋友吧">
+            </div>
+      
+
+        </article>
+
+               <article id="article3" class="article3">
+
+                <div class="inv-title-container">
+                  <h3>
+                    <div class="inv-chest-icon"></div>
+                    置物櫃
+                  </h3>
+                </div>
+
+            <h5>太好了，你的新朋友來了，不過他看起來有點餓。 來看看有甚麼可以給他吃吧</h5>
+            
+        <div class="container-food">
+            <div class="popup-body">
+              <div class="petCare-description">
+                <div class="petCare-preview" id="petCarePetBox">
+                  <img src="images/bori-sad.png" alt="">
+                </div>
+              </div>
+              <div class="petCare-stats">
+                <div class="petCare-health">
+                  <div class="petCare-health-bar-box">
+                    <a>生命值：11 / 11</a>
+                  </div>
+                </div>
+                <div class="petCare-hunger">
+                  <img src="images/hunger-icon.png" alt="">
+                  <!-- <div class="petCare-hunger-icon"></div> -->
+                  <a>快要餓死了</a>
+                </div>
+                <div class="petCare-level">
+                  <img src="images/level-icon.png" alt="">
+                   <p>Level 1</p>
+                </div>
+                <div class="petCare-mood">
+                  <img src="images/mood-icon.png" alt="">
+                    <p>開心的</p>
+                </div>
+              </div>
+            </div> 
+            <div class="input-group flex-wrap flex-fill main-group">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                               <input type="checkbox" id="food1-1" name="food1" value="甘薯青檸披薩">
+                            </div>
+                        </div>
+                        <div class="input-group-text flex-fill d-block">
+                            <img src="images/pizza.png" alt="">
+                            <label class="d-block" for="food1-1">甘薯青檸披薩</label>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                               <input type="checkbox" id="food1-2" name="food1" value="辣味海駒漢堡包">
+                            </div>
+                        </div>
+                        <div class="input-group-text flex-fill d-block">
+                            <img src="images/foo_peophin_burger3.png" alt="">
+                            <label class="d-block" for="food1-2">辣味海駒漢堡包</label>
+                            
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                               <input type="checkbox" id="food1-3" name="food1" value="辣起司熱狗">
+                            </div>
+                        </div>
+                        <div class="input-group-text flex-fill d-block">
+                            <img src="images/hotdog_chiliecheese.png" alt="">
+                            <label class="d-block" for="food1-3">辣起司熱狗</label>
+                            
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                               <input type="checkbox" id="food1-4" name="food1" value="藍莓甜甜圈">
+                            </div>
+                        </div>
+                        <div class="input-group-text flex-fill d-block">
+                            <img src="images/bluedonut.png" alt="">
+                            <label class="d-block" for="food1-4">藍莓甜甜圈</label>
+                            
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                               <input type="checkbox" id="food1-5" name="food1" value="酪梨寶寶食品">
+                            </div>
+                        </div>
+                        <div class="input-group-text flex-fill d-block">
+                            <img src="images/hfo_avacadobbfood.png" alt="">
+                            <label class="d-block" for="food1-5">酪梨寶寶食品</label>
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </article>
+         <article id="article4" class="article4">
+              <h4>吃飽了之後你們決定到鎮上熟悉環境，<br>於是拿著隨身包包就一起出門了。</h4>
+              <p>今天的天氣很好，廣場舉辦活動有很多人，看起來十分熱鬧。<br>你們興奮得跑去看看附近小攤販的美味食物與各種新奇小東西。</p>
+        </article>
+        <article id="article5" class="article5">
+              <div class="alert alert-success" role="alert">
+                <h4 class="alert-heading">有事發生了!</h4>
+                <div class="alert-text">
+                  <img src="images/portrait_31.png">
+                  <p>一個匆忙的影子跑過，撞開了人群，你的寵物也因此跌倒。之後似乎又有幾個警察追了過去......</p>
+                  <hr>
+                </div>
+              </div>
+              <p>你趕緊從包包拿出了藥品，受傷的寵物看起來很不舒服。</p>
+              <div class="input-group flex-wrap flex-fill main-group">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                               <input type="checkbox" id="potion1-1" name="potion1" value="康復藥水V">
+                            </div>
+                        </div>
+                        <div class="input-group-text flex-fill d-block">
+                          <img src="images/potion19.png" alt="">
+                          <label class="d-block" for="food1-1"> 康復藥水V</label>
+                              
+                            
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                               <input type="checkbox" id="potion1-2" name="potion1" value="莓靈藥">
+                            </div>
+                        </div>
+                        <div class="input-group-text flex-fill d-block">
+                            <img src="images/mag_healing_apple.png" alt="">
+                            <label class="d-block" for="potion1-2">莓靈藥</label>
+                            
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                               <input type="checkbox" id="potion1-3" name="potion1" value="強力藥水">
+                            </div>
+                        </div>
+                        <div class="input-group-text flex-fill d-block">
+                            <img src="images/mag_healing_striped.png" alt="">
+                            <label class="d-block" for="potion1-3">強力藥水</label>
+                            
+                        </div>
+                    </div>
+            </div>
+        </article>
+
+        <article id="article6" class="article6">
+            <p>回家的路上決定買點禮物送給你的新朋友，要買什麼比較適合他呢</p>
+            <div class="input-group flex-wrap flex-fill main-group">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                               <input type="checkbox" id="gift1-1" name="gift1" value="神秘島郵票">
+                            </div>
+                        </div>
+                        <div class="input-group-text flex-fill d-block">
+                            <img src="images/stamp_island_heads.png" alt="">
+                            <label class="d-block" for="gift1-1">神秘島郵票</label>
+                              
+                            
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                               <input type="checkbox" id="gift1-2" name="gift1" value="桃子冰淇淋">
+                            </div>
+                        </div>
+                        <div class="input-group-text flex-fill d-block">
+                            <img src="images/peachicecream.png" alt="">
+                            <label class="d-block" for="gift1-2">桃子冰淇淋</label>
+                            
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                               <input type="checkbox" id="gift1-3" name="gift1" value="塑膠小鴨玩具">
+                            </div>
+                        </div>
+                        <div class="input-group-text flex-fill d-block">
+                            <img src="images/rubberduck.png" alt="">
+                            <label class="d-block" for="gift1-3">塑膠小鴨玩具</label>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                               <input type="checkbox" id="gift1-4" name="gift1" value="小型金屬盾牌">
+                            </div>
+                        </div>
+                        <div class="input-group-text flex-fill d-block">
+                            <img src="images/smallshield.png" alt="">
+                            <label class="d-block" for="gift1-4">小型金屬盾牌</label>
+                        </div>
+                    </div>
+            </div>
+        </article>
+        <article id="article7" class="article7">
+           <label for="giftmessage">送禮物的時候要說什麼呢</label>
+            <div class="main-group">
+                <div class="main-group">
+                    <textarea class="form-control " name="giftmessage" id="giftmessage" cols="30" rows="10" placeholder="自由填答"></textarea>
+                </div>
+            </div>
+        </article>
+        <article id="article8" class="article8">
+            <h3>太好了你和新朋友度過了充實的一天，<br>明天希望也是個美好的一天!</h3>
+            <div class="ENDBTN"> 
+  
+              <a id="start-test" class="btn btn-outline-dark" type="button" name="button" href="list.html">查看日記</a>
+            </div>
+        </article>
+        </section>
+
+     
+    </div>
+    <!-- <footer class="bg-warning">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScUNhciJo6mPj33tLDGMxnw5AKgzP2Y1yutT1oY_8DX6nU0Jw/viewform">參考網址</a>
+    </footer> -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="js/main.js"></script>
+    
+  </body>
+  <template id="tipTemplate01" style="display: none;">
+    <div class="tip">
+        <i class="fa fa-exclamation-circle"></i>
+        <span>這是一個必須要填的欄位</span>
+    </div>      
+  </template>
+</html>

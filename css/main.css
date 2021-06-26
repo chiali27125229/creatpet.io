@@ -1,0 +1,308 @@
+body {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.h5{
+	height: 5px;
+}
+.z1{
+	z-index: 1;
+}
+.cover{
+	background-color: rgba(0, 0, 0, 0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 2;
+	display: none;
+	place-items: center;
+}
+.container{
+	background-image: url(../images/bg-pattern.png);
+	position: relative;
+	width: 728px;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+}
+.bori1{
+	display: flex;
+	justify-content: center;
+}
+.chosenPet__form {
+/*	display: flex;
+	margin-left: 200px;
+	justify-content: center;
+	width: 300px;*/
+    margin: .5em 0;
+    background-color: #fdd124;
+    border: 3px solid #946926;
+    border-radius: 10px;
+}
+.species {
+    margin-top: 4px;
+    text-align: center;
+}
+
+header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+
+}
+nav{
+	position: absolute;
+/*	position: fixed; 以整個視窗做計算*/
+	bottom:30px;
+	right: 20px;
+	z-index: 1;	
+
+}
+.btn{
+	background: rgb(255,202,23);
+	border: #808080 solid 2px;
+}
+article{
+	position: absolute;
+	/*position: fixed; 以整個視窗做計算?*/
+	width: 100%;
+	height: 100vh;
+	padding-top: 50px;
+	display: none;
+	padding-left: 10px;
+	padding-right: 30px;
+}
+.article2{
+	padding-top: 0px;
+}
+article h1{
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+article h3{
+	padding-top: 4px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+.article4{
+	text-align: center;
+}
+.bori2{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.bori2 img{
+	display: flex;
+	width: 160px;
+	margin-bottom: -20px;
+}
+.Pet__form{
+	
+	height: 40px;
+    background-color: #fdd124;
+    border: 3px solid #946926;
+    border-radius: 10px;
+}
+.input-group{
+	background-color: #fdd124;
+  /*  border: 1px solid #946926;*/
+    border-radius: 10px;
+}
+.form__container{
+	padding: 8px;
+    background-color: #fdd124;
+    border-radius: 10px;
+    border: 3px solid #946926;
+}
+.form-box{
+	background-color: #FFFFFF
+	border-radius: 6px;
+    border: 2px solid #946926;
+    padding-top: 4px;
+    text-align: center;
+    margin-top: 4px;
+}
+.inv-title-container{
+	    border-image-slice: 34 32 37 28;
+    border-image-width: 34px 32px 37px 28px;
+    border-image-outset: 4px 12px 4px 14px;
+    border-image-repeat: stretch stretch;
+    border-image-source: url(../images/inventory-backing.svg);
+    border-style: solid;
+    position: relative;
+    box-sizing: border-box;
+    width: auto !important;
+    max-width: 250px;
+    color: #fff;
+    padding-left: 25px;
+    margin: 20px auto !important;
+}
+.inv-chest-icon{
+	background-image: url(../images/inventory-chest.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 160%;
+    width: 55px;
+    position: absolute;
+    left: -35px;
+    top: -30%;
+}
+.article3 .d-block{
+	display: flex;
+	align-items: center;
+}
+.input-group-text img{
+	width: 40px;
+}
+.container-food{
+	margin-top: 20px;
+	display: flex;
+
+}
+.popup-body{
+	width: 300px;
+	background-color: #fff;
+	text-align: center;
+	margin-right: 20px;
+}
+.popup-body img{
+	width: 160px;
+	
+}
+.petCare-stats {
+    margin: 15px auto 10px;
+    width: 90%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #E6E4DD;
+    display: grid;
+    grid-gap: 10px;
+    font-size: 10pt;
+}
+.petCare-health-bar-box {
+    border-radius: 15px;
+    border: 1px solid #464646;
+    -webkit-box-shadow: 0px 3px 0px 0px rgb(70 70 70);
+    -moz-box-shadow: 0px 3px 0px 0px rgba(70,70,70,1);
+    box-shadow: 0px 3px 0px 0px rgb(70 70 70);
+    position: relative;
+/*    overflow: hidden;*/
+    background: #fff;
+}
+.petCare-hunger{
+	display: flex;
+	justify-content: center;
+	align-items:center;
+
+}
+.petCare-level{
+	display: flex;
+	justify-content: center;
+	align-items:center;
+}
+.petCare-mood{
+	display: flex;
+	justify-content: center;
+	align-items:center;
+}
+.petCare-hunger img{
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+	
+}
+.petCare-level img{
+	width: 30px;
+	height: 30px;
+	margin-right: 35px;
+	
+}
+.petCare-mood img{
+	width: 30px;
+	height: 30px;
+	margin-right: 35px;
+	
+}
+/*.petCare-hunger-icon{
+	width: 25px;
+    background-image: url(../images/hunger-icon.png);
+}*/
+.alert-success{
+	background-color: #f4f4f4;
+
+}
+.alert-heading{
+	display: flex;
+	background-color: #FFED97;
+	justify-content: center;
+	text-align: center;
+	font-size: 20px;
+}
+.alert-text{
+	display: flex;
+	justify-content: center;
+}
+.alert-text img{
+	border: 1px solid black;
+	margin-right: 20px;
+}
+.tip{
+	width: 100%;
+	color: red;
+	font-size: 14px;
+	margin-left: 5px;
+}
+.bdr{
+	border: 1px solid red;
+	border-radius: 3px;
+}
+.article8{
+	text-align: center;
+}
+.ENDBTN{
+	 margin-top: 280px;
+}
+.img{
+	position: absolute;
+	bottom: 0;
+	right: 10px;
+	margin-bottom: -600px;
+}
+.newPosi{
+	margin-bottom: 0;
+	transition: all 0.3s;
+}
+
+footer{
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+}
+#article1{display: block;}
+/*#article2{display: none;}
+#article3{display: none;}
+#article4{display: none;}
+#article5{display: none;}
+#article6{display: none;}
+#article7{display: none;}
+#article8{display: none;}*/
+
+.schoolTypeRight{
+	width: calc(100% - 90px); 
+}
+
